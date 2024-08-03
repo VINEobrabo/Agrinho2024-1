@@ -1,0 +1,189 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: #fde039;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header {
+    background: #d6b80b;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+header h1 {
+    font-family: 'Roboto Slab', serif;
+    color: #ffffff;
+    text-shadow: 2px 2px 0 #000000;
+    padding: 10px;
+    margin: 0;
+}
+
+header .botao-inicio {
+    background: none;
+    color: white;
+    border: 2px solid white;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: 10px;
+}
+
+header .botao-inicio:hover {
+    background: white;
+    color: #0c8608;
+}
+
+main {
+    padding: 20px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: calc(100vh - 160px);
+}
+
+section {
+    position: relative;
+    flex: 1;
+    overflow: hidden;
+    border-right: 2px solid black;
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 0.3s ease-in-out;
+}
+
+section:hover {
+    transform: scale(1.05);
+    z-index: 1;
+}
+
+#secao1 {
+    background-image: url('agricultor.AVIF');
+}
+
+#secao2 {
+    background-image: url('exodo-rural.png');
+}
+
+#secao3 {
+    background-image: url('Empresarios.png');
+    border-right: none;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+h2, p {
+    margin: 0;
+}
+
+.botao {
+    background: none;
+    color: #d6b80b;
+    border: 2px solid #a7911a;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-decoration: none;
+}
+
+.botao:hover {
+    background: #004d40;
+    color: #02cc67;
+}
+
+footer {
+    background: #d6b80b;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    width: 100%;
+}
+
+.patrocinadores {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 10px;
+}
+
+.patrocinadores img {
+    margin: 0 10px;
+    height: 50px;
+}
+
+.detalhes {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    border-radius: 8px;
+    margin: 20px 0;
+}
+
+.detalhes h2, .detalhes p {
+    color: #000000;
+}
+
+.exemplo {
+    margin-top: 20px;
+}
+
+.exemplo-conteudo {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.foto-exemplo {
+    width: 150px;
+    height: auto;
+    border-radius: 8px;
+    margin-right: 20px;
+}
+
+.exemplo-descricao {
+    flex: 1;
+    padding: 10px;
+    background-color: #ffffff;
+    color: #333;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
